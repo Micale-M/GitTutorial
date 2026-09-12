@@ -8,6 +8,14 @@ average(numbers));
 public static double average(int[] nums) {
 // Placeholder: This function is incomplete and
 currently returns 0
-return 0;
+if(nums.length == 0) {
+	return 0;
+	}
+int total = 0;
+for (int n:nums){
+	total+=n;
+}
+return (double) total/nums.length;
+
 }
 }
